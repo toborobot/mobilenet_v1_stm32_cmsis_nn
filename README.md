@@ -48,7 +48,7 @@ Shortly we will release a Python script for the import of pre-trained Tensorflow
 + Add the URI (this modified repo) `https://github.com/toborobot/mobilenet_v1_stm32_cmsis_nn.git` and click `Next`
 
 <p align="center">
-  <img src="docs/import3.jpg" align="middle" width="340">
+  <img src="docs/imgs/import3.jpg" align="middle" width="340">
 </p>
 
 + Select all the branches and click the button `Next`
