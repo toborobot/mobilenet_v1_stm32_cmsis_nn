@@ -33,24 +33,26 @@
 ENTRY(Reset_Handler)
 
 /* Highest address of the user mode stack */
-_estack = 0x20020000;    /* end of RAM */
+/*_estack = 0x20020000; */   /* end of RAM old */
+_estack = 0x24080000;    /* end of RAM new */
 /* Generate a link error if heap and stack don't fit into RAM */
-_Min_Heap_Size = 0x0;      /* required amount of heap  */
-_Min_Stack_Size = 0x400; /* required amount of stack */
+/*_Min_Heap_Size = 0x0;*/      /* required amount of heap old  */
+_Min_Heap_Size = 0x1000;      /* required amount of heap new  */
+/*_Min_Stack_Size = 0x400;*/ /* required amount of stack old*/
+_Min_Stack_Size = 0x1000; /* required amount of stack new */
 
-/* Specify the memory areas not worked for stm32h743ZIT6U */
-/*MEMORY
+/* old Specify the memory areas */
+MEMORY
 {
 DTCMRAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 128K
 RAM_D1 (xrw)      : ORIGIN = 0x24000000, LENGTH = 512K
 RAM_D2 (xrw)      : ORIGIN = 0x30000000, LENGTH = 288K
 RAM_D3 (xrw)      : ORIGIN = 0x38000000, LENGTH = 64K
 ITCMRAM (xrw)      : ORIGIN = 0x00000000, LENGTH = 64K
-FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 2048K
-}*/
-
-/* new memory size worked*/
-MEMORY
+FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 2048K
+}
+/* new memory size*/
+/*MEMORY
 {
 DTCMRAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 128K
 RAM_D2 (xrw)      : ORIGIN = 0x30040000, LENGTH = 32K
@@ -58,7 +60,7 @@ RAM_D1 (xrw)      : ORIGIN = 0x30000000, LENGTH = 256K
 RAM_D3 (xrw)      : ORIGIN = 0x38000000, LENGTH = 64K
 ITCMRAM (xrw)      : ORIGIN = 0x00000000, LENGTH = 64K
 FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 2048K
-}
+}*/
 
 /* Define output sections */
 SECTIONS
