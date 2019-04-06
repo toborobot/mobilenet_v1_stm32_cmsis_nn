@@ -107,5 +107,6 @@ The following table show the profiling layer-per-layer of this Mobilenet impleme
   <img src="docs/imgs/agama_detected.png" align="middle" width="1194">
 </p>
 
-
+## load code to stm with ST-LINK utility
+[article](https://opensimhardware.wordpress.com/2016/07/26/how-to-flash-firmware-to-stm32fx/)
 
