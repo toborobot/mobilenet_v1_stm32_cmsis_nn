@@ -2,7 +2,7 @@
 """
 Created on Fri Apr  5 16:24:35 2019
 
-@author: surkov
+@author: toborobot
 """
 from PIL import Image
 import image_list
