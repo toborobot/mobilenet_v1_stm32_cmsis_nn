@@ -105,5 +105,10 @@ The following table show the profiling layer-per-layer of this Mobilenet impleme
 </p>
 
 + added python files for picture<->array image convertation
++ debug wb4stm32 mode -> agama lisard detected!
+<p align="center">
+  <img src="docs/imgs/agama_detected.png" align="middle" width="160">
+</p>
+
 
 
