@@ -96,6 +96,13 @@ The following table show the profiling layer-per-layer of this Mobilenet impleme
 + to check different imsge added 160_input_image1.h with agama lizard (need to change name of file in main.c file ( line 123)
 + changed memory allocation addreses and values to fit requirements of Nucleo-H743ZI rev 1137 MB (see file STM32H743ZITx_FLASH.id)
 + added imagenet class file to fast checklabel class name
++ sample images from 160_input_image.h and 160_input_image1.h files
+<p align="center">
+  <img src="docs/imgs/sample.jpg" align="middle" width="160">
+</p>
+<p align="center">
+  <img src="docs/imgs/agama.jpg" align="middle" width="160">
+</p>
 
 
 
