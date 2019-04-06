@@ -51,7 +51,7 @@ RAM_D3 (xrw)      : ORIGIN = 0x38000000, LENGTH = 64K
 ITCMRAM (xrw)      : ORIGIN = 0x00000000, LENGTH = 64K
 FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 2048K
 }
-/* new memory size*/
+/* new memory size remarked now - works with old memory areas - see before*/
 /*MEMORY
 {
 DTCMRAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 128K
