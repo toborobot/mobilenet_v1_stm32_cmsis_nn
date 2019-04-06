@@ -92,4 +92,11 @@ The following table show the profiling layer-per-layer of this Mobilenet impleme
 + The project supports only STM32H7 board.
 + Input image is statically linked at compile time.
 
+## additional changes made
++ to check different imsge added 160_input_image1.h with agama lizard (need to change name of file in main.c file ( line 123)
++ changed memory allocation addreses and values to fit requirements of Nucleo-H743ZI rev 1137 MB (see file STM32H743ZITx_FLASH.id)
++ added imagenet class file to fast checklabel class name
+
+
+
 
